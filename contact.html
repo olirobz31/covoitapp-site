@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CovoitApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>🚗 CovoitApp</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="privacy.html">Confidentialité</a></li>
+                <li><a href="terms.html">Conditions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Un problème ? Une suggestion ? N'hésitez pas à nous contacter !</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Informations de contact</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:olirobz31@gmail.com">olirobz31@gmail.com</a></p>
+                        <p class="contact-note">Nous répondons généralement sous 24-48 heures</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📍 Localisation</h3>
+                        <p>Toulouse, France</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🕐 Support</h3>
+                        <p>Lundi - Vendredi : 9h00 - 18h00</p>
+                        <p class="contact-note">Hors jours fériés</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="support">Support technique</option>
+                                <option value="account">Problème de compte</option>
+                                <option value="payment">Question sur un paiement</option>
+                                <option value="report">Signaler un problème</option>
+                                <option value="suggestion">Suggestion d'amélioration</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+
+                    <p class="form-note"><strong>Note</strong> : Pour le moment, veuillez nous contacter directement par email à <a href="mailto:olirobz31@gmail.com">olirobz31@gmail.com</a>. Le formulaire sera activé prochainement.</p>
+                </div>
+            </div>
+
+            <section class="faq-preview">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>❓ Comment créer un compte ?</h3>
+                        <p>Téléchargez l'application, cliquez sur "S'inscrire" et suivez les étapes avec votre adresse email.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>💳 Les paiements sont-ils sécurisés ?</h3>
+                        <p>Oui, tous les paiements sont traités via Stripe, une plateforme de paiement sécurisée et reconnue mondialement.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>🚗 Comment réserver un trajet ?</h3>
+                        <p>Recherchez un trajet dans l'onglet "Tous les trajets", cliquez sur "Réserver" et suivez le processus de paiement.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❌ Puis-je annuler une réservation ?</h3>
+                        <p>Oui, vous pouvez annuler depuis l'onglet "Mes réservations". Le remboursement dépend du délai d'annulation.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 CovoitApp - Toulouse, France</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
